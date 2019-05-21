@@ -1,20 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
 body{
-  font-family: 'Georgia', sans-serif;
-  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
   color: $dark-color;
   line-height: 1.5em;
   background-color: $primary-color;
 }
 
-#container{
-  width: 80%;
-  margin: 20px auto;
-  overflow: hidden;
-  border: 1px solid $dark-color;
-  border-radius: 5px;
-  @include border-radius(5px);
-}
-
-section{
-  min-height: 200px;
+img{
+  width: 100%;
 }
