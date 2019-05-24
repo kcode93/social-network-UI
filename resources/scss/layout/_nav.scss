@@ -8,8 +8,6 @@ nav{
   z-index: 1;
   width:100%;
   top:0;
-  background-color: $dark-color;
-  color: $light-color;
   font-size: 1.2rem;
   opacity: 0.9;
   ul{
@@ -17,7 +15,6 @@ nav{
 
   }
   a{
-    color: $light-color;
     text-decoration: none;
     padding: 0.45rem;
     margin: 0 0.25rem;

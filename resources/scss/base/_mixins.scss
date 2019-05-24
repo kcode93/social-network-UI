@@ -12,3 +12,7 @@
   background-color: $color;
   color: set-text-color($color);
 }
+
+@mixin set-linkColor($colorA){
+  color: set-text-color($colorA);
+}
