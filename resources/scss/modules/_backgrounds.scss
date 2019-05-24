@@ -1,0 +1,37 @@
+.bg {
+    &-primary {
+        @include set-background($primary-color);
+    }
+}
+
+.bg {
+    &-light {
+        @include set-background($light-color);
+        border: 1px solid $primary-border-color;
+    }
+}
+
+.bg {
+    &-dark {
+        @include set-background($dark-color);
+    }
+}
+
+.bg {
+    &-success {
+        @include set-background($success-color);
+    }
+}
+
+.bg {
+    &-danger {
+        @include set-background($danger-color);
+    }
+}
+
+.bg {
+    &-white {
+        @include set-background($white-color);
+        border: 1px solid $primary-border-color;
+    }
+}
