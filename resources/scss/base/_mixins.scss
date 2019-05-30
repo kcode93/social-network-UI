@@ -13,6 +13,50 @@
   color: set-text-color($color);
 }
 
+//set link color
 @mixin set-linkColor($colorA){
   color: set-text-color($colorA);
 }
+
+//set Margin all around
+@mixin margin($space){
+  .m-#{$space}{
+    margin: #{$space}rem;
+  }
+}
+
+//set Vertical Margin
+@mixin margin-y($space){
+  .my-#{$space}{
+    margin: #{$space}rem 0;
+  }
+}
+
+//set Horizontal Margin
+@mixin margin-x($space){
+  .mx-#{$space}{
+    margin: 0 #{$space}rem;
+  }
+}
+
+//set Padding all around
+@mixin padding($space){
+  .p-#{$space}{
+    padding: #{$space}rem;
+  }
+}
+
+//set Top/Bottom Padding
+@mixin padding-y($space){
+  .py-#{$space}{
+    padding: #{$space}rem 0;
+  }
+}
+
+//set Left/Right Padding
+@mixin padding-x($space){
+  .px-#{$space}{
+    padding: 0 #{$space}rem;
+  }
+}
+

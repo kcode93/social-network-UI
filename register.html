@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Social network theme Web Page">
+    <meta name="keywords" content="social network, profile, users, friends">
+    <meta name="author" content="Kenneth Garcia">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!--style sheets-->
+    <link rel="stylesheet" href="./resources/css/main.min.css" type="text/css">
+    <title>Welcome to the DevConnector | Register</title>
+  </head><!--end of head-->
+  <body>
+    <nav class="bg-dark">
+      <h1><a href="index.html"><i class="fas fa-code"></i> DevConnector</a></h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </nav><!--end of nav-->
+
+    <section class="container">
+      <h1 class="large text-primary">Sign Up</h1>
+      <p class="lead">
+        <i class="fas fa-user"> Create Your Account</i>
+      </p>
+      <form action="dashboard.html" class="form">
+        <div class="form-group">
+          <input type="text" placeholder="Name" required>
+        </div><!--end of form-group-->
+        <div class="form-group">
+          <input type="text" placeholder="Email">
+        </div><!--end of form-group-->
+        <small class="form-text">
+          This site uses Gravatar, so if you want a profile
+          image, use a Gravatar email.
+        </small> 
+        <div class="form-group">
+            <input type="password" placeholder="Password" minlength="6">
+        </div><!--end of form-group-->
+        <div class="form-group">
+            <input type="password" placeholder="Confirm Password" minlength="6">
+        </div><!--end of form-group-->
+        <input type="submit" value="Register" class="btn btn-primary"/>
+      </form><!--end of form-->
+      <p class="my-1">Already have an account? <a href="login.html">Log In</a></p>
+    </section><!--end of section-->
+
+  </body><!--end of body-->
+</html>

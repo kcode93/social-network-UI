@@ -5,17 +5,41 @@
 .x-large{
     font-size: 4rem;
     line-height: 1.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .large{
     font-size: 3rem;
     line-height: 1.2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .lead{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-primary{
+    color: $primary-color;
+}
+
+.text-secondary{
+    color: $secondary-color;
+}
+
+.text-light{
+    color: $light-color;
+}
+
+.text-dark{
+    color: $dark-color;
+}
+
+.text-success{
+    color: $success-color;
+}
+
+.text-danger{
+    color: $danger-color;
 }
 
