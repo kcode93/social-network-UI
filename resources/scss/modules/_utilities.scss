@@ -1,0 +1,73 @@
+//transparent cover
+.dark-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $transparent-cover;
+}
+
+//generate margin and padding classes dynamically
+$spaceAmount: (1,2,3,4,5);
+@each $space in $spaceAmount {
+  //margin all around
+  .m-#{$space}{
+    margin: #{$space}rem;
+  }
+
+  //vertical margin
+  .my-#{$space}{
+    margin: #{$space}rem 0;
+  }
+
+  //horizontal margin
+  .mx-#{$space}{
+    margin: 0 #{$space}rem;
+  }
+
+   //margin all around
+   .p-#{$space}{
+    padding: #{$space}rem;
+  }
+
+  //vertical margin
+  .py-#{$space}{
+    padding: #{$space}rem 0;
+  }
+
+  //horizontal margin
+  .px-#{$space}{
+    padding: 0 #{$space}rem;
+  }
+
+}
+
+//alerts
+.alert{
+    padding: 0.8rem;
+    margin: 1rem;
+    opacity: 0.9;
+    background-color: $light-color;
+    color: $dark-color;
+
+    &.alert-primary{
+        @include set-background($primary-color);
+    }
+
+    &.alert-light{
+        @include set-background($light-color);
+    }
+
+    &.alert-dark{
+        @include set-background($dark-color);
+    }
+
+    &.alert-success{
+        @include set-background($success-color);
+    }
+
+    &.alert-danger{
+        @include set-background($danger-color);
+    }
+}
