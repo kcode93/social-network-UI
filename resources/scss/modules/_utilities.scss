@@ -166,3 +166,30 @@ $spaceAmount: (1,2,3,4,5);
   background-color: $primary-border-color;
   margin: 1.5rem 0;
 }
+
+//table
+.table{
+  th,td{
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid $primary-color;
+    border-right: none;
+    border-left: none;
+  }
+
+  tr{
+    & >:first-child{
+      border-left: 1px solid $primary-color;
+    } 
+
+    & >:last-child{
+      border-right: 1px solid $primary-color;
+    }
+  }
+
+  th{
+    @include set-background($primary-color);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
