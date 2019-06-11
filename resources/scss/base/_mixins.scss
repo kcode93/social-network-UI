@@ -6,7 +6,7 @@
     @return $light-color;
   }
 }
-  
+
 //set background & text color
 @mixin set-background($color){
   background-color: $color;
@@ -17,3 +17,4 @@
 @mixin set-linkColor($colorA){
   color: set-text-color($colorA);
 }
+

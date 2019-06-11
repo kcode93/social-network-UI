@@ -65,6 +65,17 @@
     background-color: $transparent-cover;
 }
 
+//alignment
+.vertical-align{
+  &-center{
+    vertical-align: middle;
+  }
+
+  &-top{
+    vertical-align: top;
+  }
+}
+
 //generate margin and padding classes dynamically
 $spaceAmount: (1,2,3,4,5);
 @each $space in $spaceAmount {
@@ -103,7 +114,7 @@ $spaceAmount: (1,2,3,4,5);
 //alerts
 .alert{
     padding: 0.8rem;
-    margin: 1rem;
+    margin: 1rem 0;
     opacity: 0.9;
     background-color: $light-color;
     color: $dark-color;
