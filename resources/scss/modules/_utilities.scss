@@ -37,6 +37,15 @@
 }
 
 .bg {
+  &-warning {
+      @include set-background($warning-color);
+      a{
+        @include set-linkColor($warning-color);
+      }
+  }
+}
+
+.bg {
   &-danger {
       @include set-background($danger-color);
       a{
@@ -73,6 +82,28 @@
 
   &-top{
     vertical-align: top;
+  }
+
+  &-bottom{
+    vertical-align: bottom;
+  }
+}
+
+.horizontal-align{
+  &-center{
+    text-align: center;
+  }
+
+  &-left{
+    text-align: left;
+  }
+
+  &-right{
+    text-align: right;
+  }
+
+  &-justify{
+    text-align: justify;
   }
 }
 
@@ -135,6 +166,10 @@ $spaceAmount: (1,2,3,4,5);
         @include set-background($success-color);
     }
 
+    &.alert-warning{
+      @include set-background($warning-color);
+    }
+
     &.alert-danger{
         @include set-background($danger-color);
     }
@@ -159,6 +194,10 @@ $spaceAmount: (1,2,3,4,5);
 
   &.badge-success{
     @include set-background($success-color);
+  }
+
+  &.badge-warning{
+    @include set-background($warning-color);
   }
 
   &.badge-danger{
