@@ -113,5 +113,24 @@
             }
         }
     }
+}
 
+.post-form-header{
+    padding: 0.5rem;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2rem;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        text-align: center;
+    }
+
+    img{
+        min-height: 100%;
+    }
 }
