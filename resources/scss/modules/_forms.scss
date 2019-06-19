@@ -22,4 +22,33 @@
        border: 1px solid $form-border;     
     }
 
+    .social-input{
+       display: flex; 
+    }
+
+    i{
+        padding: 0.5rem;
+        width: 4rem;
+
+        &.fa-twitter{
+            color: $twitter-color;
+        }
+
+        &.fa-facebook{
+            color: $facebook-color;
+        }
+
+        &.fa-youtube{
+            color: $youtube-color;
+        }
+
+        &.fa-instagram{
+            color: $instagram-color;
+        }
+
+        &.fa-linkedin{
+            color: $linkedin-color;
+        }
+    }
+
 }
