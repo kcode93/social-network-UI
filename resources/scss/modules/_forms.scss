@@ -22,6 +22,14 @@
        border: 1px solid $form-border;     
     }
 
+    input[type="submit"]{
+       font: inherit;
+    }
+
+    .btn-primary{
+       padding: 0.5rem;
+    }
+
     .social-input{
        display: flex; 
     }
@@ -48,6 +56,10 @@
 
         &.fa-linkedin{
             color: $linkedin-color;
+        }
+
+        &.fa-arrow-left{
+            width: 1.5rem;
         }
     }
 
